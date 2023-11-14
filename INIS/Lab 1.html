@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+
+            function askNum(question) {
+                let num = parseInt(prompt(question));
+                if (isNaN(num)) {
+                    alert("Введите число");
+                    return askNum(question);
+                }
+                else return num;
+            }
+            
+            function askString(question) {
+                let answer = prompt(question);
+                if(answer === '' || answer === null || answer.length > 50) {
+                    alert("Введите непустую строку не длиннее 50 символов");
+                    return askNum(question);
+                }
+                else return answer;
+            }
+            
+            let numberOfFilms = askNum('Сколько фильмов вы уже посмотрели?');
+            
+            let personalMovieDB = {
+                count: numberOfFilms,
+                movies: {}
+            };
+            
+            let filmExample = askString('Один из последних просмотренных фильмов?');
+            
+            let filmMark = askNum('На сколько оцените его?');
+            
+            personalMovieDB.movies.title = filmExample;
+            personalMovieDB.movies.mark = filmMark;
+            console.log(personalMovieDB); 
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            let personalMovieDB = {
+                privat: false,
+                movies: {
+                    "Унесенные ветром": 10,
+                    "Милые кости": 9,
+                    "Червь и его компания": 10
+                }
+            }
+
+            function show() {
+                if(personalMovieDB.privat) {
+                    document.write('private');
+                    return
+                }
+
+                const table = document.createElement('table');
+                Object.entries(personalMovieDB.movies)
+                    .forEach((entry)=>{
+                        table.innerHTML+=`<tr><td>${entry[0]}</td><td>${entry[1]}</td>`;
+                    });
+                document.body.insertAdjacentElement('beforeend', table)
+            }
+
+            show();
+        </script>
+    </body>
+</html>
