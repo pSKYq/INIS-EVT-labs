@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <form class="summary" action="@" method="POST">
+        <div class="input">
+          <input type="text" placeholder="Введите имя" />
+          <input type="text" placeholder="Введите фамилию" />
+          <input type="text" placeholder="Введите отчество" />
+          <input type="email" placeholder="Введите адрес электронной почты" />
+          <input type="password" placeholder="Введите пароль" />
+          <input type="password" placeholder="Подтвердите пароль" />
+          <input type="tel" placeholder="Введите номер телефона" />
+        </div>
+
+        <div class="sex">
+          <label for="male">Мужской</label>
+          <input type="radio" id="male" name="sex" />
+          <label for="female">Женский</label>
+          <input type="radio" id="female" name="sex" />
+        </div>
+
+        <div class="vibr">
+          <div>
+            <input type="checkbox" id="react" name="frameworks" value="react" />
+            <label for="react">Высокий</label>
+          </div>
+          <div>
+            <input type="checkbox" id="vue" name="frameworks" value="vue" />
+            <label for="vue">Средний</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="angular"
+              name="frameworks"
+              value="angular"
+            />
+            <label for="angular">Низкий</label>
+          </div>
+        </div>
+
+        <div class="file">
+          <label for="file">Прикрепите резюме</label>
+          <input type="file" id="file" />
+        </div>
+        <div class="set">
+          <input type="submit" />
+          <input type="reset" />
+        </div>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
