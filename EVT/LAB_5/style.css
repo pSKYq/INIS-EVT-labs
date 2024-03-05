@@ -1,0 +1,63 @@
+body {
+    background-color: #bd13a3;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    max-width: 1440px; 
+    margin: 0 auto; 
+  }
+  @font-face {
+    font-family: 'ofont.ru_MisterBrush';
+    src: url('ofont.ru_MisterBrush.ttf') format('truetype'); 
+  }
+  
+  @font-face {
+    font-family: 'ofont.ru_SpriteGraffiti'; 
+    src: url('ofont.ru_SpriteGraffiti.ttf') format('truetype'); 
+  }
+  @font-face {
+    font-family: 'ofont.ru_Kaori'; 
+    src: url('ofont.ru_Kaori.ttf') format('truetype'); 
+  }
+  .mov1{
+    font-family: 'ofont.ru_MisterBrush';
+  }
+  .mov2{
+    font-family: 'ofont.ru_SpriteGraffiti';
+  }
+  .mov3{
+    font-family: 'ofont.ru_Kaori';
+  }
+ 
+  
+  ul {
+    list-style-type: none; 
+    padding: 0; 
+  }
+  
+  ul li a {
+    color: black; 
+    text-decoration: none; 
+  }
+  .op1{
+    text-align: center; 
+  }
+  .op2{
+    text-align: justify;
+  }
+  .op3{
+    text-align: right;
+  }
+  img {
+    width: 370px; 
+    height: 320px; 
+    border-radius: 20px;
+  }
+  .op3{
+    font-weight: bold;
+  }
+  
+  
+  
