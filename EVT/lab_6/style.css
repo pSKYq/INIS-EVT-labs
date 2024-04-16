@@ -1,0 +1,152 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+.vibrate {
+  margin: 50px;
+  font-size: 20px;
+  background-color: red;
+  animation: vibrate .4s infinite linear;
+}
+
+.vibrate:hover {
+  animation-play-state: paused;
+  background-color: green;
+}
+
+a {
+  position: relative;
+  font-size: 20px;
+  color: black;
+  text-decoration: none; 
+ 
+}
+
+
+@keyframes vibrate {
+  0% { transform: translateX(-15px); }
+  20% { transform: translateY(15px); }
+  40% { transform: translateX(15px); }
+  60% { transform: translateY(-15px); }
+  100% { transform: translateX(-15px); }
+}
+
+@keyframes bg-color{
+  0%{color: black;}
+  100%{color: green;}
+}
+
+a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover {
+  animation: bg-color 0.3s linear forwards;
+}
+a:hover::after {
+  width: 100%;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  animation: fall 3s forwards infinite;
+  
+}
+
+@keyframes fall {
+  0%{
+    margin-top: 0;
+    height: 50px;
+    width: 50px;
+    animation-timing-function: ease-in;
+  }
+  25% {
+    margin-top: 400px;
+    height: 50px;
+    width: 50px;
+  }
+  28% {
+    margin-top: 410px;
+    height: 40px;
+    width: 60px;
+    animation-timing-function: ease-out;
+  }
+  44% {
+    margin-top: 200px;
+    width: 50px;
+    height: 50px;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    margin-top: 400px;
+    height: 50px;
+    width: 50px;
+  }
+  62% {
+    margin-top: 410px;
+    height: 40px;
+    width: 60px;
+    animation-timing-function: ease-out;
+  }
+
+  73% {
+    margin-top: 300px;
+    width: 50px;
+    height: 50px;
+    animation-timing-function: ease-in;
+  }
+
+  85% {
+    margin-top: 400px;
+    height: 50px;
+    width: 50px;
+  }
+  88% {
+    margin-top: 410px;
+    height: 40px;
+    width: 60px;
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    margin-top: 350px;
+    width: 50px;
+    height: 50px;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    margin-top: 400px;
+    width: 50px;
+    height: 50px;
+  }
+}
