@@ -1,0 +1,149 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: rgba(16, 233, 215, 0.178);
+}
+
+@media (min-width: 1400px) {
+  .adaptive {
+    display: grid;
+    grid-template-areas:
+      "A A B B"
+      "C C C C"
+      "D D E E"
+      "F G H I";
+  }
+
+  .adaptive > article:nth-child(1) {
+    grid-area: A;
+  }
+  .adaptive > article:nth-child(2) {
+    grid-area: B;
+  }
+  .adaptive > article:nth-child(3) {
+    grid-area: C;
+  }
+  .adaptive > article:nth-child(4) {
+    grid-area: D;
+  }
+  .adaptive > article:nth-child(5) {
+    grid-area: E;
+  }
+  .adaptive > article:nth-child(6) {
+    grid-area: F;
+  }
+  .adaptive > article:nth-child(7) {
+    grid-area: G;
+  }
+  .adaptive > article:nth-child(8) {
+    grid-area: H;
+  }
+  .adaptive > article:nth-child(9) {
+    grid-area: I;
+  }
+}
+
+@media (max-width: 1399px) {
+  .adaptive {
+    display: grid;
+    grid-template-areas:
+      "A A A A"
+      "B B B B"
+      "C C C C"
+      "D D E E"
+      "F F G G"
+      "H H I I";
+  }
+
+  .adaptive > article:nth-child(1) {
+    grid-area: A;
+  }
+  .adaptive > article:nth-child(2) {
+    grid-area: B;
+  }
+  .adaptive > article:nth-child(3) {
+    grid-area: C;
+  }
+  .adaptive > article:nth-child(4) {
+    grid-area: D;
+  }
+  .adaptive > article:nth-child(5) {
+    grid-area: E;
+  }
+  .adaptive > article:nth-child(6) {
+    grid-area: F;
+  }
+  .adaptive > article:nth-child(7) {
+    grid-area: G;
+  }
+  .adaptive > article:nth-child(8) {
+    grid-area: H;
+  }
+  .adaptive > article:nth-child(9) {
+    grid-area: I;
+  }
+}
+
+@media (max-width: 700px) {
+  .adaptive {
+    display: grid;
+    grid-template-areas:
+      "A A A A"
+      "B B B B"
+      "C C C C"
+      "D D D D"
+      "E E E E"
+      "F F F F"
+      "G G G G"
+      "H H H H"
+      "I I I I";
+  }
+
+  .adaptive > article:nth-child(1) {
+    grid-area: A;
+  }
+  .adaptive > article:nth-child(2) {
+    grid-area: B;
+  }
+  .adaptive > article:nth-child(3) {
+    grid-area: C;
+  }
+  .adaptive > article:nth-child(4) {
+    grid-area: D;
+  }
+  .adaptive > article:nth-child(5) {
+    grid-area: E;
+  }
+  .adaptive > article:nth-child(6) {
+    grid-area: F;
+  }
+  .adaptive > article:nth-child(7) {
+    grid-area: G;
+  }
+  .adaptive > article:nth-child(8) {
+    grid-area: H;
+  }
+  .adaptive > article:nth-child(9) {
+    grid-area: I;
+  }
+}
